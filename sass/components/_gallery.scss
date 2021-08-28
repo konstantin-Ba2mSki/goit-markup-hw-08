@@ -1,15 +1,15 @@
 .gallery {
-  padding: 0;
-  margin: 0;
-  margin-top: -30px;
-  margin-left: -30px;
+  // padding: 0;
+  // margin: 0;
+  // margin-top: -30px;
+  // margin-left: -30px;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 
   &__item {
-    margin-top: 30px;
-    margin-left: 30px;
+    // margin-top: 30px;
+    // margin-left: 30px;
     list-style: none;
   }
 }
@@ -17,7 +17,7 @@
 .gallary__wrapper {
   background: #ffffff;
   border: 1px solid #eeeeee;
-  padding: 20px 24px 20px 24px;
+  // padding: 20px 24px 20px 24px;
 }
 
 .gallery__link:hover,
@@ -38,7 +38,7 @@
 .gallary__text {
   color: $primary-text-color;
   font-size: 16px;
-  margin-top: 4px;
+  // margin-top: 4px;
   line-height: 1.8;
 }
 
@@ -75,7 +75,7 @@
   top: 0;
   left: 0;
   transform: translateY(100%);
-  padding: 66px 24px;
+  // padding: 66px 24px;
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
