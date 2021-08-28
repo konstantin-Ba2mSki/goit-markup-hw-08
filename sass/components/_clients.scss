@@ -1,12 +1,12 @@
-// .clients {
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
+.clients {
+  // display: flex;
+  // justify-content: center;
+  // text-align: center;
 
-//   &__item:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
+  &__item:not(:last-child) {
+    // margin-right: 30px;
+  }
+}
 
 .clients__link {
   // padding: 16px 32px;
