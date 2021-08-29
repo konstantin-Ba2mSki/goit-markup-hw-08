@@ -76,7 +76,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">эффективные решения<br />для вашего бизнеса</h1>
-          <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+          <div class="hero__btn">
+            <button type="button" class="hero__modal" data-modal-open>Заказать услугу</button>
+          </div>
         </div>
       </section>
 
@@ -140,7 +142,7 @@
 
       <section class="section section--nopaddingtop">
         <div class="container">
-          <h2 class="section__title">Чем мы занимаемся</h2>
+          <h2 class="section__title-text">Чем мы занимаемся</h2>
           <ul class="works">
             <li class="works__item">
               <img src="./images/box1.jpg" alt="робочий стол" width="370" />
@@ -163,7 +165,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./images/photo4.jpg" alt="мужик в очках" width="270" />
+              <img src="./images/imgmobile.jpg" alt="мужик в очках" width="450" />
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -202,7 +204,7 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/photo1.jpg" alt="блондинка в очках" width="270" />
+              <img src="./images/imgmobile1.jpg" alt="блондинка в очках" width="" />
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -222,7 +224,7 @@
                         <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
-                  
+
                   <li class="social__item">
                     <a href="#" class="social__link"
                       ><svg class="social__icon" width="20" height="20">
@@ -241,7 +243,7 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/photo2.jpg" alt="мужик без очков" width="270" />
+              <img src="./images/imgmobile2.jpg" alt="мужик без очков" width="" />
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -280,7 +282,7 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/photo3.jpg" alt="брюнет в очках" width="270" />
+              <img src="./images/imgmobile3.jpg" alt="брюнет в очках" width="" />
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
@@ -381,7 +383,7 @@
           >
           <address>
             <ul class="contacts">
-              <li class="contact__item">Киев, пр-т Леси Украинки, 26</li>
+              <li class="contact__item">г. Киев, пр-т Леси Украинки, 26</li>
               <li class="contact__item">
                 <a class="contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
@@ -443,13 +445,16 @@
                 class="mail-text"
                 autocomplete="on"
               />
+
+              <div class="button">
+                <button type="submit" class="button-footer">
+                  Подписаться
+                  <svg class="logo-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </form>
-            <button type="submit" class="button button-icon">
-              <span class="#">Подписаться</span>
-              <svg class="logo-icon" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>
