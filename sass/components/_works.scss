@@ -1,6 +1,6 @@
 .section {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 60px;
 
   &--background {
     background-color: $bg-color;
@@ -17,7 +17,6 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  padding-top: 60px;
   padding-bottom: 30px;
 }
 
