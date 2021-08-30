@@ -1,6 +1,6 @@
 .footer {
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -29,6 +29,7 @@
     line-height: 1.19;
     text-decoration: none;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 }
 
@@ -50,6 +51,7 @@
   color: #ffffff;
   font-style: normal;
   list-style: none;
+  margin-bottom: 8px;
 }
 
 .contact__item .contact__link {
@@ -66,6 +68,8 @@
 }
 
 .social-footer {
+  padding-top: 50px;
+  padding-bottom: 60px;
   // margin-left: 70px;
 
   &__title {
@@ -90,12 +94,12 @@
 }
 
 .social__item:not(:last-child) {
-  // margin-right: 10px;
+  margin-right: 10px;
 }
 
 .footer-list__link {
-  // width: 44px;
-  // height: 44px;
+  width: 44px;
+  height: 44px;
   border-radius: 50px;
   // padding: 12px;
   fill: #ffffff;
@@ -112,6 +116,7 @@
 .social {
   display: flex;
   justify-content: center;
+  padding: 0;
 
   &__item:not(:last-child) {
     margin-right: 10px;
@@ -130,6 +135,10 @@
     background-color: $accent-color;
     fill: #ffffff;
   }
+}
+
+.social-footer__title {
+  margin-bottom: 20px;
 }
 
 .social__icon {
@@ -218,7 +227,7 @@
   text-align: center;
   font-weight: 700;
   line-height: 1.14;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: #ffffff;
   font-style: normal;
@@ -230,7 +239,7 @@
 // }
 
 .footer-form input {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 319px) {
     width: 450px;
     height: 50px;
   }
@@ -245,9 +254,9 @@
     height: 50px;
   }
 
-  // width: 358px;
-  // height: 50px;
-  // padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
   color: #ffffff;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -256,8 +265,7 @@
 }
 
 .footer-form {
-  // display: flex;
-  // justify-content: center;
+  text-align: center;
 }
 
 .button {
