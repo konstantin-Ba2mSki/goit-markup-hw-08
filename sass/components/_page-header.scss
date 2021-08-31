@@ -35,6 +35,9 @@
 }
 
 .menu-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -149,7 +152,7 @@
 }
 
 .auth-nav {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
   margin-left: auto;

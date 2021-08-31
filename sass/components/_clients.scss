@@ -10,7 +10,7 @@
 
 .clients__item {
   max-width: 210px;
-  width: calc((100% - 60px) / 2);
+  flex-basis: calc((100% - 60px) / 2);
 
   @media screen and (max-width: 768px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
@@ -20,7 +20,7 @@
   @media screen and(min-width:767px) and(max-width:1199px) {
     margin: 15px;
     max-width: 226px;
-    width: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
   }
 
   &:not(:last-child) {

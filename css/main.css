@@ -85,6 +85,12 @@ body {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +199,7 @@ body {
   list-style: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 768px) {
   .auth-nav {
     display: none;
   }
@@ -782,7 +788,8 @@ p.works__label {
 
 .clients__item {
   max-width: 210px;
-  width: calc((100% - 60px) / 2);
+  -ms-flex-preferred-size: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 60px) / 2);
 }
 
 @media screen and (max-width: 768px) {
@@ -797,7 +804,8 @@ p.works__label {
   .clients__item {
     margin: 15px;
     max-width: 226px;
-    width: calc((100% - 90px) / 3);
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
   }
 }
 
