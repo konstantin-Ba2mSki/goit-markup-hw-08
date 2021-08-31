@@ -780,7 +780,12 @@ p.works__label {
   }
 }
 
-@media screen and (min-width: 768px) {
+.clients__item {
+  max-width: 210px;
+  width: calc((100% - 60px) / 2);
+}
+
+@media screen and (max-width: 767px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
@@ -805,7 +810,7 @@ p.works__label {
 
 @media screen and (max-width: 767px) {
   .clients__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 

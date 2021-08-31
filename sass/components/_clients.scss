@@ -9,7 +9,10 @@
 }
 
 .clients__item {
-  @media screen and (min-width: 768px) {
+  max-width: 210px;
+  width: calc((100% - 60px) / 2);
+
+  @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
@@ -21,7 +24,7 @@
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
     padding: 0;
 
