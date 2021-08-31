@@ -766,7 +766,7 @@ p.works__label {
   padding-left: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -780,7 +780,7 @@ p.works__label {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
