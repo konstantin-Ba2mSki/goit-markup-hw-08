@@ -815,6 +815,7 @@ p.works__label {
 }
 
 .clients__item .clients__link {
+  display: block;
   padding: 16px 52px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
