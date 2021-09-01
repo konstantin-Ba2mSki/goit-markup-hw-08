@@ -37,13 +37,32 @@
           <a href="#" class="logo-label" lang="en"
             ><span class="logo-label__text" lang="en">Web</span>Studio</a
           >
-          <div class="menu-mobile">
-            <button type="button" class="menu-button">
-              <svg width="24" height="16" aria-label="переключатель мобильного меню">
-                <use href="./images/symbol-defs.svg#icon-close_24px"></use>
-                <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
-              </svg>
-            </button>
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="24" height="16" aria-label="п ереключатель мобильного меню">
+              <use class="icon-close" href="./images/symbol-defs.svg#icon-close_24px"></use>
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="menu-container__box">
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Портфолио</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
           </div>
 
           <ul class="site-nav">
@@ -533,6 +552,7 @@
       </div>
     </div>
 
+    <script src="./js /menu.js"></script>
     <script src="./js /modal.js"></script>
   </body>
 </html>
