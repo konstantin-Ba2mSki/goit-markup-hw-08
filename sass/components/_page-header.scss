@@ -46,6 +46,11 @@
   z-index: 999;
 }
 
+.menu-button:hover,
+.menu-button:focus {
+  fill: $accent-color;
+}
+
 .menu-button .icon-close {
   display: none;
   overflow: scroll;
@@ -99,8 +104,8 @@
   color: $title-text-color;
 }
 
-.menu-container__link:hover,
-.menu-container__link:focus {
+.menu-container__link--current:hover,
+.menu-container__link--current:focus {
   color: $accent-color;
 }
 

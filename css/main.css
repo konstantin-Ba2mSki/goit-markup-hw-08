@@ -91,6 +91,11 @@ body {
   }
 }
 
+.menu-button:hover,
+.menu-button:focus {
+  fill: #2196f3;
+}
+
 .menu-button .icon-close {
   display: none;
   overflow: scroll;
@@ -144,8 +149,8 @@ body {
   color: #212121;
 }
 
-.menu-container__link:hover,
-.menu-container__link:focus {
+.menu-container__link--current:hover,
+.menu-container__link--current:focus {
   color: #2196f3;
 }
 
