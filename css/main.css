@@ -82,6 +82,7 @@ body {
   position: absolute;
   top: 22px;
   right: 22px;
+  z-index: 999;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,6 +93,7 @@ body {
 
 .menu-button .icon-close {
   display: none;
+  overflow: scroll;
 }
 
 .menu-button.is-open .icon-close {
@@ -109,7 +111,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 15px;
+  padding: 40px;
   background-color: #ffffff;
   font-size: 20px;
   overflow-y: scroll;
@@ -121,6 +123,32 @@ body {
   display: block;
 }
 
+.menu-container__box {
+  margin: 0;
+  margin-bottom: 302px;
+  padding-top: 8px;
+}
+
+.menu-container__item {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-container__link {
+  color: #212121;
+}
+
+.menu-container__link:hover,
+.menu-container__link:focus {
+  color: #2196f3;
+}
+
 .auth-nav-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,6 +158,41 @@ body {
 
 .auth-nav-social__item:not(:last-child) {
   margin-right: 20px;
+}
+
+.auth-nav-mobile__box {
+  margin: 0;
+}
+
+.auth-nav-mobile__item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav-mobile__link {
+  color: #757575;
+}
+
+.auth-nav-phone__item {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.auth-nav-phone__link {
+  color: #2196f3;
+}
+
+.auth-nav-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .main-nav {
@@ -260,15 +323,23 @@ body {
   margin-right: 50px;
 }
 
-.auth-nav__icon {
+.auth-nav-mobile {
+  margin-bottom: 64px;
+}
+
+.auth-nav-social {
+  margin-bottom: 30vh;
+}
+
+.auth-nav {
   fill: #757575;
   margin-right: 10px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-nav__link:hover .auth-nav__icon,
-.auth-nav__link:focus .auth-nav__icon {
+.auth-nav__link:hover .auth-nav,
+.auth-nav__link:focus .auth-nav {
   fill: #2196f3;
 }
 
@@ -655,7 +726,6 @@ body {
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 60px;
 }
 
@@ -674,6 +744,7 @@ body {
   line-height: 1.2;
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 60px;
 }
 
 @media screen and (mix-width: 768px) {
