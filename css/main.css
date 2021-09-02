@@ -1104,6 +1104,9 @@ p.works__label {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1167,6 +1170,12 @@ p.works__label {
 @media screen and (min-width: 1200px) {
   .social-footer {
     margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-footer {
+    margin-left: 165px;
   }
 }
 
