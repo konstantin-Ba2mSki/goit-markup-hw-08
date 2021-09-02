@@ -141,10 +141,6 @@ body {
   color: #212121;
 }
 
-.site-nav__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
 .menu-container__link {
   color: #212121;
 }
@@ -307,7 +303,7 @@ body {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .auth-nav {
     display: none;
   }
@@ -397,15 +393,43 @@ body {
 
 .gallery {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 767px) {
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .gallery__item {
   list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
+        flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .gallary__wrapper {
@@ -1061,6 +1085,28 @@ p.works__label {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   color: #ffffff;
@@ -1116,6 +1162,12 @@ p.works__label {
 .social-footer {
   padding-top: 50px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    margin-left: 70px;
+  }
 }
 
 .social-footer__title {
@@ -1303,6 +1355,12 @@ p.works__label {
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    margin-left: 93px;
+  }
 }
 
 .subscribe {

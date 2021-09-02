@@ -97,7 +97,7 @@
 }
 
 .site-nav__item:not(:last-child) {
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
 }
 
 .menu-container__link {
@@ -259,7 +259,7 @@
 }
 
 .auth-nav {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 

@@ -5,8 +5,22 @@
 }
 
 .container--footer {
-  // display: flex;
-  // align-items: baseline;
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.tablet-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo {
@@ -70,7 +84,10 @@
 .social-footer {
   padding-top: 50px;
   padding-bottom: 60px;
-  // margin-left: 70px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 
   &__title {
     display: flex;
@@ -244,7 +261,9 @@
 }
 
 .box {
-  // margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .subscribe {
