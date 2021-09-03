@@ -1,6 +1,7 @@
 .clients {
   @media screen and (max-width: 479px) {
     display: block;
+    display: grid;
   }
 
   @media screen and (min-width: 1200px) {

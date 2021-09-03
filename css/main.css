@@ -1074,6 +1074,8 @@ p.works__label {
 @media screen and (max-width: 479px) {
   .clients {
     display: block;
+    display: -ms-grid;
+    display: grid;
   }
 }
 
