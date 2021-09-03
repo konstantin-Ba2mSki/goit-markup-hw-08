@@ -297,8 +297,19 @@
   }
 }
 
+.auth-nav__icon {
+  margin-right: 10px;
+}
+
 .filter {
-  // justify-content: center;
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
   display: flex;
 
   @media screen and (min-width: 480px) {

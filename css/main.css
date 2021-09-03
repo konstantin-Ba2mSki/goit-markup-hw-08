@@ -343,10 +343,29 @@ body {
   fill: #2196f3;
 }
 
+.auth-nav__icon {
+  margin-right: 10px;
+}
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -435,6 +454,7 @@ body {
 .gallary__wrapper {
   background: #ffffff;
   border: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
 }
 
 .gallery__link:hover,
