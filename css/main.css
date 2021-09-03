@@ -32,6 +32,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;

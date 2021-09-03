@@ -1,5 +1,9 @@
 // main nav
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
