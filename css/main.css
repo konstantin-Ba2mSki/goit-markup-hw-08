@@ -927,6 +927,7 @@ ul.auth-nav-social__box {
 }
 
 .button-send {
+  margin-top: 30px;
   display: block;
   margin-left: auto;
   margin-right: auto;
