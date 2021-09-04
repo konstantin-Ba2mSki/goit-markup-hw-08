@@ -11,6 +11,7 @@ body.modal-open {
 .container__page-header {
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 
 .container {
@@ -34,7 +35,7 @@ body.modal-open {
 
 // mobile-menu
 
-.menu-button {
+.button-open {
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -43,10 +44,17 @@ body.modal-open {
   padding: 0;
   border: none;
   background-color: transparent;
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 999;
+}
+
+.button-close {
+  position: fixed;
+  top: 25px;
+  right: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .menu-button:hover,

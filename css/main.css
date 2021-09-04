@@ -52,6 +52,9 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container {
@@ -79,7 +82,7 @@ body.modal-open {
   }
 }
 
-.menu-button {
+.button-open {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -87,16 +90,25 @@ body.modal-open {
   padding: 0;
   border: none;
   background-color: transparent;
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 999;
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .button-open {
     display: none;
   }
+}
+
+.button-close {
+  position: fixed;
+  top: 25px;
+  right: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .menu-button:hover,
