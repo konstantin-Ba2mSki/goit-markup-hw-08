@@ -1458,13 +1458,18 @@ p.works__label {
 }
 
 .subscribe {
-  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 20px;
   text-transform: uppercase;
   color: #ffffff;
   font-style: normal;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+  }
 }
 
 .footer-form input {
@@ -1486,18 +1491,36 @@ p.works__label {
   }
 }
 
-.footer-form {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    text-align: center;
+  }
 }
 
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .button {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    margin-left: 12px;
+  }
 }
 
 .button-footer {
