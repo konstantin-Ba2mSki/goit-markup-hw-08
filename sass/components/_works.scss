@@ -7,6 +7,17 @@
 }
 
 .section--nopaddingtop {
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 0;
 }
 
@@ -25,17 +36,6 @@
 }
 
 .section__title-text {
-  @media screen and (max-width: 479px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
   text-align: center;
   color: $title-text-color;
   font-weight: 700;
