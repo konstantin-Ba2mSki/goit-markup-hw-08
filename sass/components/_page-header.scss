@@ -101,16 +101,6 @@ body.modal-open {
   padding-top: 8px;
 }
 
-.vl {
-  height: 0;
-  width: 20px;
-  position: absolute;
-  left: 30%;
-  margin-left: -20px;
-  top: 17px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-}
 
 .menu-container__item {
   font-weight: 500;
@@ -145,6 +135,9 @@ body.modal-open {
 ul.auth-nav-social__box {
   display: flex;
   position: relative;
+}
+
+
 }
 
 .auth-nav-social__item:not(:last-child) {
