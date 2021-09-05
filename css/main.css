@@ -522,7 +522,7 @@ ul.auth-nav-social__box {
   }
 }
 
-.gallary__wrapper {
+.gallery__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,7 +544,7 @@ ul.auth-nav-social__box {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.gallary__title {
+.gallery__title {
   color: #212121;
   font-style: normal;
   font-weight: 700;
@@ -553,14 +553,14 @@ ul.auth-nav-social__box {
   letter-spacing: 0.06em;
 }
 
-.gallary__text {
+.gallery__text {
   color: #757575;
   font-size: 16px;
   line-height: 1.8;
 }
 
-.gallery__link:hover .gallary__overlay-text,
-.gallery__link:focus .gallary__overlay-text {
+.gallery__link:hover .gallery__overlay-text,
+.gallery__link:focus .gallery__overlay-text {
   opacity: 1;
 }
 
@@ -575,12 +575,12 @@ ul.auth-nav-social__box {
   height: 100%;
 }
 
-.gallary__box {
+.gallery__box {
   position: relative;
   overflow: hidden;
 }
 
-.gallary__box::before {
+.gallery__box::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -595,7 +595,7 @@ ul.auth-nav-social__box {
 }
 
 @media screen and (min-width: 480px) {
-  .gallary__box::before {
+  .gallery__box::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -611,7 +611,7 @@ ul.auth-nav-social__box {
 }
 
 @media screen and (min-width: 768px) {
-  .gallary__box::before {
+  .gallery__box::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -626,16 +626,18 @@ ul.auth-nav-social__box {
   }
 }
 
-.gallary__box:hover::before {
+.gallery__box:hover::before {
   opacity: 1;
 }
 
-.gallary__overlay-text {
+.gallery__overlay-text {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  padding: 66px 24px;
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
@@ -646,9 +648,9 @@ ul.auth-nav-social__box {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery__link:hover .gallary__overlay-text,
-.gallery__link:focus .gallary__overlay-text,
-.gallery__link:focus .gallary__box::before {
+.gallery__link:hover .gallery__overlay-text,
+.gallery__link:focus .gallery__overlay-text,
+.gallery__link:focus .gallery__box::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
