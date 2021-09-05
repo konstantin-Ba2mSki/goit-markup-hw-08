@@ -344,19 +344,30 @@ ul.auth-nav-social__box {
 }
 
 .filter {
+  display: flex;
+  margin: 0;
   @media screen and (max-width: 480px) {
     flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
   }
 
-  display: flex;
-
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 34px;
+    margin-top: 94px;
   }
 
   &__button {
@@ -376,7 +387,9 @@ ul.auth-nav-social__box {
 }
 
 .filter__item {
-  margin-bottom: 16px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 16px;
+  }
   list-style-type: none;
 }
 
