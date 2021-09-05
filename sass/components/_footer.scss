@@ -53,9 +53,23 @@
 }
 
 .contacts {
-  display: contents;
-  text-align: center;
-  // margin: 0;
+  @media screen and (max-width: 479px) {
+    display: contents;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: contents;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: contents;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 
   &:not(:last-child) {
     // margin-bottom: 9px;

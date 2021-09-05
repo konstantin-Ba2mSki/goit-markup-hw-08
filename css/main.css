@@ -1375,9 +1375,31 @@ p.works__label {
   margin-bottom: 20px;
 }
 
-.contacts {
-  display: contents;
-  text-align: center;
+@media screen and (max-width: 479px) {
+  .contacts {
+    display: contents;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contacts {
+    display: contents;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: contents;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    text-align: left;
+  }
 }
 
 .contact__item {
