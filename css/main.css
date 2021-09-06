@@ -410,7 +410,6 @@ ul.auth-nav-social__box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 40px;
-    margin-top: 60px;
   }
 }
 
@@ -419,7 +418,6 @@ ul.auth-nav-social__box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 30px;
-    margin-top: 60px;
   }
 }
 
@@ -428,8 +426,6 @@ ul.auth-nav-social__box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 60px;
   }
 }
 
@@ -439,7 +435,6 @@ ul.auth-nav-social__box {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 34px;
-    margin-top: 94px;
   }
 }
 
@@ -1361,7 +1356,7 @@ p.works__label {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .logo-studio {
     text-align: center;
   }
@@ -1417,6 +1412,16 @@ p.works__label {
 
 .contact__item .contact__link:hover, .contact__item .contact__link:focus {
   color: #2196f3;
+}
+
+.mobile-logo {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .social-footer {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -330,25 +330,20 @@ ul.auth-nav-social__box {
   @media screen and (max-width: 480px) {
     flex-wrap: wrap;
     margin-bottom: 40px;
-    margin-top: 60px;
   }
 
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
     margin-bottom: 30px;
-    margin-top: 60px;
   }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
     margin-bottom: 34px;
-    margin-top: 94px;
   }
 
   &__button {
