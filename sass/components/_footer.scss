@@ -20,6 +20,7 @@
 .tablet-footer {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     align-items: baseline;
   }
 }
