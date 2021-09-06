@@ -1337,6 +1337,7 @@ p.works__label {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-bottom: 60px;
   }
 }
 
@@ -1410,6 +1411,12 @@ p.works__label {
 
 .contact__item .contact__link:hover, .contact__item .contact__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .social-footer {
+    margin-left: 165px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
