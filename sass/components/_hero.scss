@@ -4,10 +4,8 @@
   padding-top: 118px;
   padding-bottom: 118px;
   height: 400px;
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
   background: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/headerm.jpg');
@@ -24,8 +22,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    margin-bottom: 60px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/headert.jpg');
     background-size: cover;
@@ -44,7 +40,6 @@
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
     height: 600px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -119,8 +114,15 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &--box {
     background-color: $bg-color;

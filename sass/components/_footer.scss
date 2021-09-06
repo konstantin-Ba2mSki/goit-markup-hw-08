@@ -13,6 +13,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    justify-content: center;
   }
 }
 
@@ -20,7 +21,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
-    justify-content: center;
   }
 }
 
@@ -35,8 +35,8 @@
   // display: inline-block;
 
   &-studio {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     font-family: $secondary-font;
     color: $accent-color;
     font-weight: 700;
@@ -44,12 +44,12 @@
     line-height: 1.19;
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 20px;
   }
 }
 
 .footer .logo-studio {
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .contacts {
@@ -97,15 +97,15 @@
 }
 
 .social-footer {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  // padding-top: 50px;
+  // padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: 165px;
+    // margin-left: 165px;
   }
 
   &__title {
