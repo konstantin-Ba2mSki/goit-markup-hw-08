@@ -188,6 +188,7 @@ ul.auth-nav-social__box {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin: 0;
 }
 
 .auth-nav-social__item:not(:last-child) {

@@ -101,7 +101,6 @@ body.modal-open {
   padding-top: 8px;
 }
 
-
 .menu-container__item {
   font-weight: 500;
   font-size: 40px;
@@ -135,10 +134,7 @@ body.modal-open {
 ul.auth-nav-social__box {
   display: flex;
   position: relative;
-      margin: 0;
-}
-
-
+  margin: 0;
 }
 
 .auth-nav-social__item:not(:last-child) {
