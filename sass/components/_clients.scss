@@ -2,15 +2,12 @@
   @media screen and (max-width: 479px) {
     display: block;
     display: grid;
-  }
-
-  @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
+    justify-content: center;
   }
 
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+
   margin: -15px;
 }
 
@@ -21,7 +18,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 8 * 15px) / 3);
+    width: calc((100% - 12 * 15px) / 6);
     margin: 15px;
   }
   display: flex;
