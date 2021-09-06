@@ -37,8 +37,9 @@
   // display: inline-block;
 
   &-studio {
-    // display: flex;
-    // justify-content: center;
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
     font-family: $secondary-font;
     color: $accent-color;
     font-weight: 700;

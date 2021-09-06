@@ -1361,6 +1361,12 @@ p.works__label {
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) {
+  .logo-studio {
+    text-align: center;
+  }
+}
+
 .footer .logo-studio {
   margin-bottom: 20px;
   display: block;
