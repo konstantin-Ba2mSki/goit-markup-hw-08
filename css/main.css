@@ -792,6 +792,11 @@ ul.auth-nav-social__box {
   background-color: #188ce8;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section--box {
   background-color: #f5f4fa;
 }
@@ -1064,7 +1069,7 @@ ul.auth-nav-social__box {
 
 .features__text {
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 1.71;
   color: #757575;
 }
 
@@ -1104,14 +1109,7 @@ ul.auth-nav-social__box {
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 60px;
-}
-
-@media screen and (mix-width: 768px) {
-  .section__title {
-    padding-bottom: 50px;
-  }
+  margin-bottom: 50px;
 }
 
 .section__title-text {
