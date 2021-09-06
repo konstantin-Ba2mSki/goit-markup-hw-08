@@ -251,6 +251,12 @@ ul.auth-nav-social__box {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-label {
+    margin-right: 93px;
+  }
+}
+
 .logo-label__text {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
@@ -263,7 +269,6 @@ ul.auth-nav-social__box {
 
 /* navbar */
 .site-nav {
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,13 +315,7 @@ ul.auth-nav-social__box {
 
 @media screen and (min-width: 768px) {
   .site-nav__link::after {
-    bottom: 2px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav__link::after {
-    bottom: 8px;
+    bottom: -3px;
   }
 }
 
