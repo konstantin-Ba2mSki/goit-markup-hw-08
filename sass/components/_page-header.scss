@@ -11,7 +11,7 @@ body.modal-open {
 .container__page-header {
   align-items: center;
   display: flex;
-  // justify-content: space-between;
+  justify-content: space-between;
 }
 
 .container {
@@ -179,7 +179,7 @@ ul.auth-nav-social__box {
 .main-nav {
   display: flex;
   align-items: center;
-  // padding: 16px 0;
+  padding: 16px 0;
 }
 
 // logo
@@ -193,10 +193,7 @@ ul.auth-nav-social__box {
   text-decoration: none;
   letter-spacing: 0.03em;
   cursor: pointer;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-  }
+  // margin-right: 93px;
 }
 
 .logo-label__text {
@@ -215,8 +212,8 @@ ul.auth-nav-social__box {
   @media screen and (max-width: 767px) {
     display: none;
   }
+  margin: 0;
   display: flex;
-  padding-left: 0;
 
   .site-nav__item {
     margin-left: 50px;
@@ -241,12 +238,18 @@ ul.auth-nav-social__box {
 
 .site-nav__link::after {
   @media screen and (min-width: 768px) {
-    bottom: -1px;
+    bottom: 2px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 8px;
   }
 
   content: '';
+
   position: absolute;
   left: 0;
+
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -295,7 +298,7 @@ ul.auth-nav-social__box {
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
-  margin-left: auto;
+  margin-left: 50px;
   list-style: none;
   fill: $primary-text-color;
   margin-right: 10px;
@@ -331,23 +334,30 @@ ul.auth-nav-social__box {
 }
 
 .filter {
-  justify-content: center;
   display: flex;
-  margin-bottom: 50px;
-
-  @media screen and (max-width: 479px) {
+  margin: 0;
+  @media screen and (max-width: 480px) {
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
     margin-bottom: 34px;
+    margin-top: 94px;
   }
 
   &__button {

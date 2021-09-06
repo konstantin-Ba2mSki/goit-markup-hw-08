@@ -53,6 +53,9 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container {
@@ -235,6 +238,7 @@ ul.auth-nav-social__box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 16px 0;
 }
 
 .logo-label {
@@ -246,12 +250,6 @@ ul.auth-nav-social__box {
   text-decoration: none;
   letter-spacing: 0.03em;
   cursor: pointer;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo-label {
-    margin-right: 93px;
-  }
 }
 
 .logo-label__text {
@@ -266,10 +264,10 @@ ul.auth-nav-social__box {
 
 /* navbar */
 .site-nav {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -313,7 +311,13 @@ ul.auth-nav-social__box {
 
 @media screen and (min-width: 768px) {
   .site-nav__link::after {
-    bottom: -1px;
+    bottom: 2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav__link::after {
+    bottom: 8px;
   }
 }
 
@@ -354,7 +358,7 @@ ul.auth-nav-social__box {
 }
 
 .auth-nav {
-  margin-left: auto;
+  margin-left: 50px;
   list-style: none;
   fill: #757575;
   margin-right: 10px;
@@ -405,20 +409,18 @@ ul.auth-nav-social__box {
 }
 
 .filter {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  margin: 0;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .filter {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: 60px;
   }
 }
 
@@ -427,6 +429,7 @@ ul.auth-nav-social__box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-top: 60px;
   }
 }
 
@@ -435,7 +438,18 @@ ul.auth-nav-social__box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 34px;
+    margin-top: 94px;
   }
 }
 
