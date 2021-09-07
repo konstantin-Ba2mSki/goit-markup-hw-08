@@ -1314,7 +1314,7 @@ p.works__label {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .tablet-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,6 +1326,20 @@ p.works__label {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tablet-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
