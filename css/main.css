@@ -249,6 +249,7 @@ ul.auth-nav-social__box {
   text-decoration: none;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding: 16px 0;
 }
 
 .logo-label__text {
@@ -1414,14 +1415,14 @@ p.works__label {
   color: #2196f3;
 }
 
-.mobile-logo {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 480px) {
-  .social-footer {
+@media screen and (max-width: 768px) {
+  .mobile-logo {
     margin-bottom: 60px;
   }
+}
+
+.social-footer {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
